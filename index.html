@@ -8,7 +8,6 @@
     <link rel=stylesheet href="./style.css">
     <script src="func.js"></script>
     <script src="main.js"></script>
-    <script src="build/pdf.js"></script>
 </head>
 
 <body>
@@ -74,12 +73,8 @@
                 </div>
                 <div class="media_content">
                     <div>
-                        <button id="prev">Previous</button>
-                        <button id="next">Next</button>
-                        <span id="page_handle">Page: <span id="page_num"></span>0 / 0<span id="page_count"></span></span>
+                        <iframe title="pdfjs-default-viewer" src="pdfs/file.pdf"></iframe>
                     </div>
-                    <canvas id="the_canvas"></canvas>
-                    <script src="pdfjs.js"></script>
                 </div>
             </div>
         </div>
