@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device_width, initial_scale=1.0">
     <title>Document</title>
     <link rel=stylesheet href="./style.css">
+    <script src="func.js"></script>
     <script src="main.js"></script>
     <script src="build/pdf.js"></script>
 </head>
+
 <body>
 
     <header>
@@ -15,53 +18,53 @@
             <ul>
                 <span class="tag_list">
                     <li>
-                        <button class="tag" id="button1">INPUT</button>
+                        <button class="tag" id="input_button">INPUT</button>
                     </li>
                     <li>
-                        <button class="tag" id="button2">OUTPUT</button>
+                        <button class="tag" id="output_button">OUTPUT</button>
                     </li>
                 </span>
             </ul>
         </div>
     </header>
 
-    <div class="content-input">
-        <div class="content-box">
-            <label for="file-input" class="custom-file-input">
+    <div class="content_input">
+        <div class="content_box">
+            <label for="file_input" class="custom_file_input">
                 <span>選擇文件</span>
-                <input type="file" id="file-input" style="display: none;">
+                <input accept=".pdf" type="file" id="file_input" style="display: none;">
             </label>
         </div>
-        
-        <div class="content-box url-input">
-            <div class="url-box">
+
+        <div class="content_box url_input">
+            <div class="url_box">
                 <input type="text" placeholder="Enter URL">
             </div>
         </div>
-          
-        <div class="content-box submit-box">
-            <button class="submit" id="upload-button">Upload</button>
+
+        <div class="content_box submit_box">
+            <button class="submit" id="upload_button">Upload</button>
         </div>
-        
-        <div class="content-box sel">
-            <select class="sel-box" title="foo" id="setting1">
+
+        <div class="content_box sel">
+            <select class="sel_box" title="foo" id="setting1">
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
             </select>
-        
-            <select class="sel-box" title="foo" id="setting2">
+
+            <select class="sel_box" title="foo" id="setting2">
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
             </select>
-        
-            <button class="sel-box" id="reset-button">Reset</button>
+
+            <button class="sel_box" id="reset_button">Reset</button>
         </div>
     </div>
 
-    <div class="content-output output">
-        <div class="content-box">
-            <div class="media-window">
-                <div class="media-content">
+    <div class="content_output output">
+        <div class="content_box">
+            <div class="media_window">
+                <div class="media_content">
                     <div>
                         <video width=100% controls>
                             <source src="file:///C:/Users/marti/Desktop/test/HTML_inno/shorts.mp4" type="video/mp4">
@@ -69,19 +72,19 @@
                         </video>
                     </div>
                 </div>
-                <div class="media-content">
+                <div class="media_content">
                     <div>
                         <button id="prev">Previous</button>
                         <button id="next">Next</button>
-                        &nbsp; &nbsp;
-                        <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+                        <span id="page_handle">Page: <span id="page_num"></span>0 / 0<span id="page_count"></span></span>
                     </div>
-                    <canvas id="the-canvas"></canvas>
+                    <canvas id="the_canvas"></canvas>
                     <script src="pdfjs.js"></script>
                 </div>
             </div>
         </div>
     </div>
-    
-  </body>
+
+</body>
+
 </html>
