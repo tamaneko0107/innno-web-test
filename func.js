@@ -31,3 +31,12 @@ function new_node(tagname, properties = {}) {
     };
     return property_modifier(document.createElement(tagname), properties);
 }
+
+/**
+ * @param {string} url_file
+ * @returns {void}
+ * @description Set the pdf file to the iframe
+ */
+function get_pdf(url_file) {
+    get('iframe[title="pdfjs_default_viewer"]')[0].src = url_file;
+}

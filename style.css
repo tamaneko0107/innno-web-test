@@ -58,7 +58,7 @@
     justify-content: center;
 }
 
-.url_input {
+.url_input_box {
     height: 3%;
     display: flex;
     align-items: center;
@@ -106,7 +106,9 @@
 .sel_box {
     display: flex;
     flex-basis: calc(33.3333% - 10px);
-
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: rgba(0, 0, 0, 0.342);
     text-align: center;
     text-align-last: center;
     justify-content: center;
