@@ -36,7 +36,6 @@
     border-radius: 20px;
 }
 
-
 .content_box {
     border: solid 1px;
     border-color: rgba(0, 0, 0, 0.342);
@@ -44,6 +43,9 @@
     position: relative;
     margin: 10px auto;
     width: 90%;
+}
+
+.content_input > .content_box:first-child {
     height: 10%;
 }
 
@@ -182,7 +184,7 @@ button {
 
 
 
-/* input,
+input,
 div {
-    border: 1px solid #ff0000;
-} */
+    /* border: 1px solid #ff0000; */
+}
