@@ -49,6 +49,21 @@
             get('#file_input')[0].value = '';
         });
 
+        get("#upload_button")[0].onclick = function() {
+            var fileInput = get("#file_input")[0];
+            var file = fileInput.files[0];
+            console.log("File: ", file);
+
+            var urlInput = get("#url_input")[0];
+            var url = urlInput.value;
+            console.log("URL: ", url);
+            
+            if (url || fileInput.files.length) {
+                get(".chat_window")[0].style.width = "300px";
+            }
+            // 在這裡添加代碼將文件和URL發送到服務器
+        }
+
 
     });
 
